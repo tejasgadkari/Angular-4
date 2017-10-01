@@ -1,0 +1,9 @@
+<button (click)=onDisplayClick() >Display Details</button>
+
+<p *ngIf="display">
+  Secret password = tuna
+</p>
+
+<p *ngFor="let log of logs">
+  <span [ngClass]="{more: log > 4}">{{log}}</span>
+</p>
